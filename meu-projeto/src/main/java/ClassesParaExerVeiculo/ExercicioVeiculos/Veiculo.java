@@ -5,9 +5,9 @@ public class Veiculo{
     private Placa placa;
     private double combustivel;
     
-    public Veiculo(Placa placa){
+    public Veiculo(Placa placa, double combustivel){
         this.placa = placa;
-        combustivel = 0;
+        this.combustivel = combustivel;
     }
 
     public void setPais(String pais){
