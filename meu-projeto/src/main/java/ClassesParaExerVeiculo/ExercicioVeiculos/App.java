@@ -21,21 +21,30 @@ public class App{
         System.out.println("Escreva a quantidade de combustível restante do veículo");
         double combustivelres = sc.nextDouble();
 
+        Veiculo v1 = new Veiculo(p1,combustivel);
+
+        System.out.println("Dados do veículo:");
+        System.out.println("Quantidade de combustível: "+v1.getCombustivelNoTanque());
+        System.out.println("Distância Efetivamente Percorrida: "+v1.dirige(distancia));
+        System.out.println("Quantidade de Combustivel: "+combustivel);
+        System.out.println("País da placa: "+pais);
+        System.out.println("Código da placa: "+cod);
+
         //Placa p1 = new Placa("Brasil","ABC1R23");
 
-        Veiculo v = new Veiculo(p1,combustivel);
-        System.out.println("Dados do veiculo antes de abastecer:");
-        System.out.println(v);
-        System.out.println("----------------");
-
-        v.abastece(65);
-        System.out.println("Dados do veiculo depois de abastecer:");
-        System.out.println(v);
-        System.out.println("----------------");
-
-        v.dirige(250);
-        System.out.println("Dados do veiculo depois de percorrer 250Km:");
-        System.out.println(v);
-        System.out.println("----------------");
+//        Veiculo v = new Veiculo(p1,combustivel);
+//        System.out.println("Dados do veiculo antes de abastecer:");
+//        System.out.println(v);
+//        System.out.println("----------------");
+//
+//        v.abastece(65);
+//        System.out.println("Dados do veiculo depois de abastecer:");
+//        System.out.println(v);
+//        System.out.println("----------------");
+//
+//        v.dirige(250);
+//        System.out.println("Dados do veiculo depois de percorrer 250Km:");
+//        System.out.println(v);
+//        System.out.println("----------------");
         }
 }
