@@ -66,3 +66,7 @@ buildNumber.properties
 .ionide
 
 # End of https://www.toptal.com/developers/gitignore/api/java,maven,visualstudiocode
+.idea/vcs.xml
+GerenciadorM-sicas/
+poo_330_2026-2/
+.idea/vcs.xml
