@@ -1,6 +1,10 @@
+package exArrayList;
+
+import javax.lang.model.element.ElementKind;
+import java.util.ArrayList;
 
 /**
- * Escreva uma descrição da classe Turma aqui.
+ * Solução própria do exercício 1, a unica classe alterada foi a Turma
  * 
  * @author (seu nome) 
  * @version (um número da versão ou uma data)
@@ -9,7 +13,7 @@ public class Turma
 {
     private String nomeDisciplina;
     private int numTurma;
-    private Aluno[] vetor;
+    private ArrayList<Aluno> listaAlunos;
     private int proximoIndice;
 
     /**
@@ -20,12 +24,12 @@ public class Turma
         // inicializa variáveis de instância
         this.nomeDisciplina = nomeDisciplina;
         this.numTurma = numTurma;
-        vetor  = new Aluno[tamanho];
+        listaAlunos = new ArrayList<Aluno>();
         proximoIndice = 0;
     }
     
     public boolean addAluno(Aluno a){
-        vetor[proximoIndice]=a;
+        listaAlunos.add(proximoIndice,a);
         proximoIndice++;
         return true;
     }
@@ -33,7 +37,7 @@ public class Turma
     public String toString(){
         String saida = "Nome: "+nomeDisciplina+ " Turma: "+ numTurma;
         for (int t=0; t<proximoIndice;t++){
-            saida = saida + "\n"+ vetor[t].toString();
+            saida = saida + "\n"+ listaAlunos.get(t).toString();
         }
         return saida;
         
